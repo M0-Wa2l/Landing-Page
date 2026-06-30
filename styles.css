@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* colors */
+    --font-w-: #ffffff;
+    --font-2-: #222222;
+    /* size of Fonts */
+    --big-big-size--: 32px;
+    --big-size--: 20px;
+    --normal-size--: 16px;
+    --small-size--: 8px;
+    --tiny-size--: 4px;
+    /* Fonts */
+    --the-address--: ;
+    --the-paragraph--: ;
+}
+
+/* the css of the page */
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.container .nav-bar {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--font-2-);
+    z-index: 2;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container .nav-bar .logo {
+    font-size: var(--small-size--);
+    color: var(--font-w-);
+}
+
+.container .nav-bar .links {
+    display: flex;
+    gap: 50px;
+    font-size: 19px;
+    color: var(--font-w-);
+}
+
+.container .nav-bar .links a {
+    text-decoration: none;
+    color: var(--font-w-);
+    position: relative;
+    transition: .3s;
+}
+
+.container .nav-bar .links a:before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    margin: -2px 0;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.container .nav-bar .links a:hover::before {
+    width: 100%;
+}
+
+.container .all-hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.container .hero .greeting h1 {
+    font-size: 45px;
+    font-family: 'fredoka', sans-serif;
+}
+
+.container .hero .greeting .mohamed {
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-top: 10px;
+    font-family: 'playwrite au tas', sans-serif;
+}
+
+
+.container .hero .buttons-of-actions a {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: serif;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container .hero .buttons-of-actions a:hover {
+    transform: scale(1.2);
+    background-color: #ffffff;
+    color: #222222;
+    cursor: pointer;
+}
+
+.links-icons {
+    font-size: 22px;
+    display: flex;
+    gap: 10px;
+    margin-left: 1px;
+}
+
+.links-icons a {
+    color: #222222;
+    transition: .3s;
+}
+
+.links-icons a:hover {
+    scale: 1.2;
+}
+
+.hero-ssecond img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.second-floor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.experiences ul {
+    margin-left: 20px;
+}
+
+.experiences ul li {
+    margin-bottom: 10px;
+}
+
+.experiences p {
+    text-align: justify;
+}
+
+.experiences .name-ex {
+    font-size: 30px;
+    font-family: 'Playwrite AU TAS', sans-serif;
+}
+
+.experiences button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    border: none;
+    background-color: gray;
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    padding: 10px;
+}
+
+.third-floor {
+    width: 100%;
+    padding: 0 10px;
+    font-family: 'Fredoka', sans-serif;
+    color: #222222;
+}
+
+.maskill {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.skilled-in {
+    height: 250px;
+    border: solid #222222 2px;
+    margin: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+
+.skilled-in i {
+    font-size: 4rem;
+}
+
+.skilled-in h2 {
+    margin-top: 40px;
+}
+
+.skilled-in h3 {
+    color: gray;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.topic {
+    padding: 20px 0;
+}
+
+.fourth-floor {
+    background-color: #222222;
+    background-image:
+        repeating-linear-gradient(-45deg,
+            transparent 0,
+            transparent 18px,
+            rgba(255, 255, 255, .05) 18px,
+            rgba(255, 255, 255, .05) 20px);
+    width: 100%;
+    height: 100vh;
+}
+
+.my-works {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    border-left: rgba(255, 255, 255, .04) solid .001px;
+    border-right: rgba(255, 255, 255, .04) solid .001px;
+    background-color: #222222;
+}
+
+.work-word h1 {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Fredoka', sans-serif;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-size: 3rem;
+}
+
+.werk-card {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.work-card {
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+}
