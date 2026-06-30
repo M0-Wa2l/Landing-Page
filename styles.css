@@ -31,7 +31,7 @@ html {
     --small-size--: 8px;
     --tiny-size--: 4px;
     /* Fonts */
-    --the-address--: ;
+    --the-address--: "Fredoka", "sans-serif";
     --the-paragraph--: ;
 }
 
@@ -312,5 +312,88 @@ canvas {
 .work-card {
     width: 250px;
     height: 250px;
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+    padding: 20px 15px;
+    border: solid 2px gray;
+    border-radius: 15px;
+}
+
+.work-card h2 {
+    height: 50%;
+    align-content: center;
+}
+
+.work-card a {
+    text-decoration: none;
+    width: 90%;
+    margin: auto;
+    color: #ffffff;
+    background-color: gray;
+    padding: 15px 0;
+    flex: 1;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.work-card a:hover {
+    background-color: #222222;
+    scale: 1.2;
+    letter-spacing: 2px;
+}
+
+.fifth-floor {
+    color: #222222;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg,
+            transparent 0px,
+            transparent 19px,
+            rgba(128, 128, 128, 0.507) 18px,
+            rgba(128, 128, 128, 0.507) 20px);
+}
+
+.contacts {
     background-color: #ffffff;
+    width: 95%;
+    margin: auto;
+    height: inherit;
+    padding: 40px;
+    border-left: rgba(255, 255, 255, .04) solid .001px;
+    border-right: rgba(255, 255, 255, .04) solid .001px;
+}
+
+.contacts span {
+    text-decoration: none;
+    color: #222222;
+    font-family: 'Fredoka', 'sans-serif';
+    padding: 10px 0;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.contacts h2 {
+    font-family: "Fredoka", "sans-serif";
+    padding-bottom: 15px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #222222;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-family: var(--the-address--);
+    display: block;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
