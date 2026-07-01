@@ -1,0 +1,178 @@
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+    .container .all-hero {
+        padding: 90px 20px 40px;
+        gap: 30px;
+        height: auto;
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .container .hero {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .hero .buttons-of-actions a {
+        margin: 0 5px;
+    }
+
+    .links-icons {
+        justify-content: center;
+    }
+
+    .second-floor {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+        gap: 25px;
+    }
+
+    .phto img {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .experiences {
+        width: 100%;
+        align-items: center;
+    }
+
+    .experiences p {
+        text-align: left;
+    }
+
+    .fourth-floor {
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .nav-bar {
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .container .nav-bar .links {
+        gap: 12px 18px;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    .container .hero .greeting h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .container .hero .greeting .mohamed {
+        font-size: 28px;
+    }
+
+    .hero-ssecond img {
+        width: min(280px, 80vw);
+    }
+
+    .maskill {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .skilled-in {
+        height: 220px;
+        margin: 8px 0;
+    }
+
+    .werk-card {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .work-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .contacts {
+        padding: 25px 20px;
+    }
+
+    .contacts span {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .experiences button {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        left: 7%;
+        outline: none;
+        border: none;
+        background-color: gray;
+        color: #ffffff;
+        font-family: 'Fredoka', sans-serif;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .hero .greeting h1 {
+        font-size: 26px;
+    }
+
+    .container .hero .greeting .mohamed {
+        font-size: 22px;
+    }
+
+    .container .hero .buttons-of-actions a {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .links-icons {
+        gap: 14px;
+        font-size: 20px;
+    }
+
+    .experiences .name-ex {
+        font-size: 24px;
+    }
+
+    .experiences p {
+        font-size: 15px;
+    }
+
+    .contacts h2 {
+        font-size: 22px;
+    }
+
+    .contacts a {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .experiences button {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        left: 7%;
+        outline: none;
+        border: none;
+        background-color: gray;
+        color: #ffffff;
+        font-family: 'Fredoka', sans-serif;
+        padding: 10px;
+    }
+}
